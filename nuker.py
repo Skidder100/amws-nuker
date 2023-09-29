@@ -1,7 +1,6 @@
 import requests
 import time
 
-# ASCII art logo
 logo = """
                                         /$$                                  /$$                                
                                       | $/                                 | $$                                
@@ -39,5 +38,6 @@ def main():
         send_discord_message(webhook_url, message, channel, bot_name, delay_seconds)
         
 if __name__ == "__main__":
-    print(logo)  # Display the ASCII art logo
+    print(logo)
+    print("BE WARNED! Discord rate limits can make the bot be slower over time. There is no way to by pass this.")
     main()
